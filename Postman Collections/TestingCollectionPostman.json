@@ -26,6 +26,28 @@
 				"url": "https://testing.com/test"
 			},
 			"response": []
+		},
+		{
+			"name": "test2",
+			"id": "5a0ae83b-8d12-49ae-b447-be77d729cb19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"testing\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://testing.com/test"
+			},
+			"response": []
 		}
 	]
 }
