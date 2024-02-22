@@ -17,4 +17,5 @@ files[] = {"id":"14487214-1d65e80f-001b-4e66-b416-e65db7f70e5f","path":"API scen
 files[] = {"path":"index.json","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
-type = openapi:3
+type = openapi:3_1
+rootFiles[] = index.json
