@@ -151,7 +151,19 @@
 							"});",
 							"",
 							"// Setting this to null would ensure that there are no other requests made after this request",
-							"postman.setNextRequest(null);"
+							"postman.setNextRequest(null);",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(504);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(100);",
+							"});"
 						],
 						"type": "text/javascript"
 					}
