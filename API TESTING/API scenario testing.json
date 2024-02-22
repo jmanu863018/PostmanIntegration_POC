@@ -139,12 +139,12 @@
 			"response": []
 		},
 		{
-			"name": "Report successful user creation",
+			"name": "request 2",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "846f075e-53e6-4ec6-ba3a-6c622d874fb7",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -152,7 +152,8 @@
 							"",
 							"// Setting this to null would ensure that there are no other requests made after this request",
 							"postman.setNextRequest(null);"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
@@ -165,7 +166,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"message\": \"{{results}}\"\n}",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"name\": \"{{name}}\",\n    \"role\": \"{{role}}\",\n    \"Field1\": \"\",\n    \"Field2\": \"\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -246,42 +247,42 @@
 	],
 	"variable": [
 		{
-			"id": "719714a8-17b4-4027-8f2a-93493330b5f3",
+			"id": "2c116b11-55e0-49a7-9a2b-d848c5a8607f",
 			"key": "users",
 			"value": "[{\"username\": \"flash\",\"name\": \"Barry Allen\",\"role\": \"Superhero\"},{\"username\": \"wonder_woman\",\"name\": \"Diana Prince\",\"role\":\"Superhero\"},{\"username\": \"batman\",\"name\": \"Bruce Wayne\",\"role\": \"Superhero\"}]"
 		},
 		{
-			"id": "e724bc86-8535-493e-be2c-0cdd17124d36",
+			"id": "82bde9db-ad22-43ac-9ee2-5da9cc27628c",
 			"key": "results",
 			"value": "[]"
 		},
 		{
-			"id": "88f9e2b3-1c47-49ff-8b1a-6b17f84433cd",
+			"id": "e226209a-3397-434a-af62-1e2fe59cc836",
 			"key": "successAPIUrl",
 			"value": "https://postman-echo.com/post"
 		},
 		{
-			"id": "741aa4c5-39d7-4abf-8f5f-ca6b9af2542a",
+			"id": "f90424f1-6139-4e35-a7c6-aa02eea5e2aa",
 			"key": "failureAPIUrl",
 			"value": "https://postman-echo.com/post"
 		},
 		{
-			"id": "378d4b20-27dc-4a9d-b8f6-919988502790",
+			"id": "34c00e15-c2e0-4ce8-b8c6-067732104683",
 			"key": "idx",
 			"value": "0"
 		},
 		{
-			"id": "2f9b12c7-c1d7-41dd-ad45-225a42163929",
+			"id": "86a8a04c-3d65-4b68-899c-dc1eee287f6d",
 			"key": "username",
 			"value": ""
 		},
 		{
-			"id": "a5ed3ee7-0cfd-4fb4-93ba-63d93b1fb9c6",
+			"id": "c88ee81f-93ee-48f1-bb50-29121ae58d6a",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "9917a231-827d-4c7f-90b2-668bb254e5f3",
+			"id": "b47c2174-3f8c-4fec-a022-9cf751b0c509",
 			"key": "role",
 			"value": ""
 		}
