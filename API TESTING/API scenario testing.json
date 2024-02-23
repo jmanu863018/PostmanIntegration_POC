@@ -201,12 +201,17 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "01eb8935-27a4-48be-8173-75e620c0bf0e",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Status code is 504\", function () {",
+							"    pm.response.to.have.status(504);",
 							"});"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
