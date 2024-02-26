@@ -72,6 +72,7 @@
 							"    // Call the failed user creation to report the results",
 							"    postman.setNextRequest(\"Report Failed User Creation\");",
 							"}",
+							"",
 							""
 						],
 						"type": "text/javascript"
@@ -163,6 +164,13 @@
 							"",
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(100);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(100);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(100);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -178,7 +186,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"{{username}}\",\n    \"name\": \"{{name}}\",\n    \"role\": \"{{role}}\",\n    \"Field1\": \"\",\n    \"Field2\": \"\"\n}",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"name\": \"{{name}}\",\n    \"role\": \"{{role}}\",\n    \"Field1\": \"test\",\n    \"Field2\": \"\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
