@@ -10,7 +10,6 @@ id = bf79aa57-77f8-4347-b70c-2bb27a62fdfe
 [config.relations.collections]
 rootDirectory = API TESTING
 files[] = {"id":"14487214-1d65e80f-001b-4e66-b416-e65db7f70e5f","path":"API scenario testing.json","metaData":{}}
-files[] = {"id":"14487214-26327f71-52d5-4c7e-8b8f-055499a5e256","path":"New Collection.json","metaData":{}}
 
 [config.relations.collections.metaData]
 
