@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "b0888c64-ef67-48b3-a7f5-00006f199843",
+		"_postman_id": "42f81846-9e2a-4323-9c3b-7015e9465371",
 		"name": "Integration testing",
 		"description": "# ⛓️ Get started here\n\nPostman allows you to test your APIs using simple Javascript code. You can evaluate your response body, headers, cookies, and more using the [ChaiJS BDD](https://www.chaijs.com/api/bdd/) syntax.\n\nThis template guides you through the process of setting up an integration test to ensure that all individual components of an API function together seamlessly.\n\nThe API under test in this collection includes three endpoints for registering and receiving a token, accessing your unique generated name, and unregistering a token:\n\n- POST `/register`\n- POST `/unregister`\n- GET `/my-name`\n    \n\nBy setting up requests in the order of the operation, we can test the flow of data to and from the endpoints and ensure they work together as expected. We also verify that the data persists between requests on the back end.\n\n## 🔖 **How to use this template**\n\n**Step 1:** Check out the requests' documentation to learn more about -\n\n- what each request is meant to do.\n- the tests we've added against each one.\n    \n\n**Step 2:** Run this collection by clicking on \"Run\".\n\n<img src=\"https://content.pstmn.io/84019b0f-69c8-4c5f-98b9-2c90a6f9a0b1/Y29sbGVjdGlvbi1ydW5uZXItYnV0dG9uLmpwZWc=\" alt=\"\" height=\"103\" width=\"266\">\n\n**Step 3:** To customize this template, replace the request URLs with your API endpoints and add or edit the tests if needed.\n\n## ℹ️ Resources\n\n[Scripting in Postman](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)\n\n[Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)\n\n[Postman Sandbox API reference](https://learning.postman.com/docs/sending-requests/grpc/postman-sandbox-api/#writing-assertions)\n\n[Using the Collection Runner](https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "33324859-b0888c64-ef67-48b3-a7f5-00006f199843"
+		"_uid": "33324859-42f81846-9e2a-4323-9c3b-7015e9465371"
 	},
 	"item": [
 		{
@@ -24,11 +24,14 @@
 							"})",
 							""
 						],
-						"id": "ae9c4e5f-ac55-4021-af6e-feba5d10f548"
+						"id": "e4ffddef-6daa-467c-b569-bfa6e18d893e"
 					}
 				}
 			],
-			"id": "42890e5d-14a6-4591-ba43-487d37b2ef62",
+			"id": "9c8101e7-703f-4c80-a4c0-20e82140de77",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -58,11 +61,11 @@
 							"    pm.expect(pm.response.json().name).to.be.a('string');",
 							"})"
 						],
-						"id": "7e715237-a0ca-4714-b4ad-9324d4587d07"
+						"id": "60c9ff89-2242-4011-b091-3a56a889b57b"
 					}
 				}
 			],
-			"id": "5d96fa03-70be-4190-9e21-7b4eaa21b585",
+			"id": "9a3bc0e8-4dab-4203-b763-057678aace17",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -109,11 +112,14 @@
 							"    pm.response.to.have.status(200)",
 							"})"
 						],
-						"id": "0c266aec-e3fd-45d8-8536-22523bc59d86"
+						"id": "439149d4-082d-4f70-9004-ff27b22588a0"
 					}
 				}
 			],
-			"id": "567e3c08-4d98-455a-ba1e-08254a459380",
+			"id": "9227932e-2708-499e-8952-165d9a2e1995",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -148,7 +154,7 @@
 				"exec": [
 					""
 				],
-				"id": "eb49cf40-aa71-4cef-b3c5-8e8759c51fbb"
+				"id": "0de58f2e-bcc0-4f17-8547-c650235107b6"
 			}
 		},
 		{
@@ -158,18 +164,18 @@
 				"exec": [
 					""
 				],
-				"id": "bf8cc238-6ee1-4850-82f8-c8f6ce633934"
+				"id": "80181efc-6aec-4d3c-ba67-3522f243dbf3"
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "2dce9a84-bb3b-409d-ba85-a53a3432a63e",
+			"id": "ccd92eda-4c32-481b-bf46-280b3f24f9fe",
 			"key": "token",
 			"value": ""
 		},
 		{
-			"id": "eaff7dc7-7d68-4d25-889f-f544659f4dc8",
+			"id": "2878995e-1565-4e75-be19-a87357ab4cf2",
 			"key": "baseUrl",
 			"value": "https://postman-integration-testing.glitch.me/"
 		}
